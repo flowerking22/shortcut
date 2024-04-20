@@ -17,8 +17,9 @@ body {
             flex-direction: column;
             gap: 20px;
             /* background: linear-gradient(45deg, white,blue, white); */
-            background:rgb(44 0 255);
-                    background:black;
+           /* background:rgb(44 0 255);
+background:black;
+                    */
             color:white;
             font-size:20px;
             font-weight:600;
