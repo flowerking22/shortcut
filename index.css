@@ -6,7 +6,7 @@ body {
             justify-content: space-around;
             align-items: center;
             /* background-color: rgb(61, 121, 181); */
-            background:rgb(218, 223, 228);
+            /*background:rgb(218, 223, 228);*/
             background:black;
             letter-spacing:2px;
         }
