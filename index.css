@@ -1,0 +1,42 @@
+body {
+            /* height: 80vh; */
+            /* width:50vw; */
+            min-height:80vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: rgb(61, 121, 181); */
+            background:rgb(218, 223, 228);
+            letter-spacing:2px;
+        }
+
+        form {
+            min-height:300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* background: linear-gradient(45deg, white,blue, white); */
+            background:rgb(44 0 255);
+            color:white;
+            font-size:20px;
+            font-weight:600;
+            padding: 20px;
+            border-radius:20px;
+        }
+    
+        input,select,textarea,button{
+            padding:10px;
+            outline:none;
+        }
+    button{
+        border:2px solid blue;
+        font-weight:800;
+        letter-spacing:3px;
+    }
+        button:hover{
+            border:2px solid white;
+            border-radius:20px;
+            background:blue;
+            color:white;
+            cursor:pointer;
+        }
