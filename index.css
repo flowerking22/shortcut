@@ -31,6 +31,9 @@ background:black;
             padding:10px;
             outline:none;
         }
+select,option{
+color:black;
+}
     button{
         border:2px solid blue;
         font-weight:800;
