@@ -1,43 +1,104 @@
 body {
     /* height: 80vh; */
     /* width:50vw; */
-    min-height: 80vh;
+    height: 90vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* background-color: rgb(61, 121, 181); */
     /*background:rgb(218, 223, 228);*/
-    background: black;
+    background: rgb(39, 38, 38);
     color: white;
     letter-spacing: 2px;
     backdrop-filter: blur(10px);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 form {
     min-height: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 25px;
     font-weight: 600;
+    padding:30px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px 20px #5b5c61;
+    border-radius: 10px;
+    font-family: "Sedan SC", serif;
 }
 
-input,select,textarea,button {
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap:30px;
+    /* flex-direction: column;
+    gap:20px;
+    justify-content: center; */
+}
+
+input,
+select,
+textarea,
+button {
     padding: 10px;
     outline: none;
+    border-radius: 5px;
+
+}
+
+input {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+::placeholder {
+    font-size: 15px;
 }
 
 button {
-    border:none;
-    font-weight: 800;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
     letter-spacing: 3px;
-    background: rgb(7, 7, 7);
-    color:rgb(160, 111, 20);
-    border:2px solid #908d8d;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
 
-button:hover {
-    background: #fcf8f8;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+.whatsapp {
+    /* background-color: green; */
+    background: url('whatsapp.jpeg') no-repeat;
+    background-size: 50px 50px;
+    background-size: cover;
+}
+
+.gmail {
+    /* background-color:red; */
+    background: url('gmail.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+textarea {
+    letter-spacing:2px;
+    font-weight:500;
+}
+input:focus{
+    border-bottom: 2px solid red;
+}
+input:user-valid{
+    border-bottom: 2px solid #05ff6d;
+}
+@media (min-width: 480px){
+    form{
+        width:400px;
+        /* min-height: 400px; */
+    }
+
+}
+span{
+    visibility:hidden;
 }
